@@ -48,7 +48,7 @@ The goal of this project is to:
 
 ## 🧱 Architecture Overview
 
-![Architecture Diagram](Project_Screenshots/mcdonalds-streaming-rohesen.png)
+![Architecture Diagram](Project_Screenshots/mcdonalds-streaming-rohesen.jpg)
 
 ---
 
@@ -61,8 +61,10 @@ The mock data generator produces:
   Each order and payment pair is matched via a common `order_id`.
 
 📸 Code Snippets:
-![Producer Code Part 1](Project_Screenshots/ss_code_1.png)
-![Producer Code Part 2](Project_Screenshots/ss_code_2.png)
+
+![Producer Code Part 1](Project_Screenshots/ss%20code%201.png)
+
+![Producer Code Part 2](Project_Screenshots/ss%20code%202.png)
 
 ---
 
@@ -88,7 +90,9 @@ CREATE STREAM macd_orders_stream (...) WITH (...);
 ```
 
 📸 Screenshot:
-![Order Stream](Project_Screenshots/ss_order_stream.png)
+
+![Order Stream](Project_Screenshots/ss%20order%20stream.png)
+
 
 ### ✅ Payment Stream
 
@@ -97,7 +101,8 @@ CREATE STREAM macd_payments_stream (...) WITH (...);
 ```
 
 📸 Screenshot:
-![Payment Stream](Project_Screenshots/ss_payment_stream.png)
+
+![Payment Stream](Project_Screenshots/ss%20payment_stream.png)
 
 ---
 
@@ -126,7 +131,9 @@ MongoDB Atlas was used to store the joined output.
 * Data ingestion via **MongoDB Kafka Sink Connector**
 
 📸 Screenshot of the Cluster:
-![MongoDB Cluster](Project_Screenshots/ss_mongodb_cluster.png)
+![MongoDB Cluster](Project_Screenshots/ss%20mongodb%20cluster.png)
+
+
 
 ---
 
@@ -135,7 +142,7 @@ MongoDB Atlas was used to store the joined output.
 Once data was streamed into MongoDB, **MongoDB Charts** was used to build visualizations — like most popular items, payment methods, or hourly revenue.
 
 📸 Dashboard Screenshot:
-![MongoDB Chart](Project_Screenshots/mongodb_dashboard.png)
+![MongoDB Chart](Project_Screenshots/mongodb%20dashboard.png)
 
 ---
 
