@@ -77,6 +77,76 @@ Two Avro-serialized topics were created in **Confluent Cloud**:
 
 Each topic uses schemas stored in **Confluent Schema Registry**.
 
+
+---
+
+
+## 🧬 Kafka Schema Definitions (Avro)
+
+Avro schemas were registered in **Confluent Schema Registry** for the two topics — `macd_orders` and `macd_payments`.
+
+### 🧾 Order Schema
+
+```json
+{
+  "type": "record",
+  "name": "Order",
+  "namespace": "com.mcdonalds",
+  "fields": [
+    {"name": "order_id", "type": "string"},
+    {"name": "customer_id", "type": "string"},
+    {"name": "order_total", "type": "double"},
+    {
+      "name": "order_items",
+      "type": {
+        "type": "array",
+        "items": {
+          "type": "record",
+          "name": "Item",
+          "fields": [
+            {"name": "item_name", "type": "string"},
+            {"name": "quantity", "type": "int"},
+            {"name": "price", "type": "double"}
+          ]
+        }
+      }
+    },
+    {
+      "name": "order_time",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}
+```
+
+### 💳 Payment Schema
+
+```json
+{
+  "type": "record",
+  "name": "Payment",
+  "namespace": "com.mcdonalds",
+  "fields": [
+    {"name": "payment_id", "type": "string"},
+    {"name": "order_id", "type": "string"},
+    {"name": "payment_amount", "type": "double"},
+    {"name": "payment_method", "type": "string"},
+    {
+      "name": "payment_time",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}
+```
+
+
+
 ---
 
 ## 🔁 Stream Processing via ksqlDB
