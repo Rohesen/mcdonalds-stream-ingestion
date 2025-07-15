@@ -2,6 +2,9 @@
 
 This project demonstrates how to simulate and stream real-time McDonald's order and payment data using **Apache Kafka**, **ksqlDB**, and **MongoDB Atlas**. It features a fully working data pipeline that supports real-time ingestion, stream joins, and analytical querying — visualized in MongoDB Dashboards.
 
+Have a look at demo video of our project👇 
+
+![Project Demo](mcdonalds-streaming-rohesen-project2.gif)
 ---
 
 ## 🛠️ Tech Stack
