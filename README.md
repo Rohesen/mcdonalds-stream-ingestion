@@ -185,7 +185,8 @@ MongoDB Atlas was used to store the joined output.
 * Data ingestion via **MongoDB Kafka Sink Connector**
 
 📸 Screenshot of the Cluster:
-![MongoDB Cluster](Project_Screenshots/ss%20mongodb%20cluster.png)
+
+![MongoDB Cluster](Project_Screenshots/ss%20mongodb_cluster.png)
 
 
 
@@ -196,7 +197,8 @@ MongoDB Atlas was used to store the joined output.
 Once data was streamed into MongoDB, **MongoDB Charts** was used to build visualizations — like most popular items, payment methods, or hourly revenue.
 
 📸 Dashboard Screenshot:
-![MongoDB Chart](Project_Screenshots/mongodb%20dashboard.png)
+
+![MongoDB Chart](Project_Screenshots/Screenshot%20mongodb%20dashboard.png)
 
 ---
 
