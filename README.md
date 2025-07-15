@@ -27,25 +27,6 @@ The goal of this project is to:
 
 ---
 
-## 📂 Project Structure
-
-```
-.
-├── kafka_producer.py                # Python script for mock data generation
-├── stream_definitions.sql           # ksqlDB stream creation and join logic
-├── Project_Screenshots/             # Architecture & setup screenshots
-│   ├── mcdonalds-streaming-rohesen.png
-│   ├── ss_order_stream.png
-│   ├── ss_payment_stream.png
-│   ├── ss_code_1.png
-│   ├── ss_code_2.png
-│   ├── ss_mongodb_cluster.png
-│   └── mongodb_dashboard.png
-├── README.md                        # Project documentation
-```
-
----
-
 ## 🧱 Architecture Overview
 
 ![Architecture Diagram](Project_Screenshots/mcdonalds-streaming-rohesen.jpg)
